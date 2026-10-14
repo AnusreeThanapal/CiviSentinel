@@ -62,6 +62,12 @@
   font-family: 'Inter', sans-serif !important;
 }
 
+/* Dark mode filter for standard raster tiles (eliminates API key watermarks) */
+.dark-tiles,
+.leaflet-tile.dark-tiles {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
 .leaflet-control-zoom a {
   background-color: rgba(13, 17, 23, 0.85) !important;
   color: #00E5FF !important;

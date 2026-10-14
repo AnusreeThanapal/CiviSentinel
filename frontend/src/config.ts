@@ -4,6 +4,9 @@ export const CONFIG = {
   // Flag controlling whether to use pre-scripted mock scenarios (true) or real backend (false)
   USE_MOCK_DATA: false,
 
+  // CARTO API Key (optional - if omitted, falls back to dark-filtered OpenStreetMap tiles)
+  CARTO_API_KEY: import.meta.env.VITE_CARTO_API_KEY || '',
+
   // Backend API base URL
   API_BASE_URL: import.meta.env.VITE_API_BASE_URL || '/api',
 
